@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>Show_folder_images</title>
+  <style>
+    body {
+      text-align: center;
+    }
+
+    img {
+      width: 40%;
+      border: 1px #000000 solid;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>画像一覧</h1>
+  <?php
+        ini_set('display_errors',1);
+
+        foreach(glob('{*.gif,*.png,*.jpg,*.jpeg,*.GIF,*.PNG,*.JPG,*.JPEG}',GLOB_BRACE) as $file){    //images/{*.GLOB_BRACE}
+            if(is_file($file)){
+                echo htmlspecialchars($file)."<br>";
+                echo "<a href={$file} target=\"blank\"><img src={$file}></a><br><br><br>";
+            }
+        }
+    ?>
+</body>
+
+</html>

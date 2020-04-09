@@ -1,0 +1,50 @@
+@startuml
+
+title "sample AmiVoiceAPI - Sequence Diagram"
+
+actor User
+'boundary Proxy
+participant UIServer as UI
+participant API
+
+User -> UI: LINK: goto /account page
+activate UI
+UI -> User:
+deactivate UI
+
+activate User
+note over User
+  Requirments:
+  UI: Setting Page
+  Click delete button
+end note
+
+' user requests account/delete page
+User -> UI: /account/delete
+deactivate User
+activate UI
+UI -> User:
+deactivate UI
+
+' confirmation form
+activate User
+note over User
+  UI: Form
+  Are you sure?
+end note
+
+
+User -> UI: POST /account/delete
+deactivate User
+activate UI
+
+note over UI: Verify: user has confirmed
+UI -> API: /account/delete
+activate API
+API -> API: delete
+API -> UI: done
+deactivate API
+UI -> User: success
+deactivate UI
+
+@enduml

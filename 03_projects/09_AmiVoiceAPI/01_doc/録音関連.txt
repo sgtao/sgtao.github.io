@@ -1,0 +1,55 @@
+﻿	// 録音関連
+	// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+	//  ┌────┐                                                      
+	//  │0       │←───────────────────────┐┐┐
+	//  └┬───┘                                                │││
+	//    │resume()                                                │││
+	//    │ - getUserMedia()                                       │││
+	//    │                                                        │││
+	//    ↓resumeStarted                                           │││
+	//  ┌────┐                                                │││
+	//  │1       │                                                │││
+	//  └┬┬┬─┘                                                │││
+	//    │││getUserMedia() 失敗                                 │││
+	//    │││                                                    │││
+	//    │││pauseEnded                                          │││
+	//    ││└──────────────────────────┘││
+	//    ││                                                        ││
+	//    ││getUserMedia() 成功 && state_==3                        ││
+	//    ││ - audioStream.getTracks().forEach(track=>track.stop()) ││
+	//    ││                                                        ││
+	//    ││pauseEnded                                              ││
+	//    │└────────────────────────────┘│
+	//    │                                                            │
+	//    │getUserMedia() 成功 && state_==1                            │
+	//    │ - audioProvider_=audioContext_.createMediaStreamSource     │
+	//    │                                             (audioStream_) │
+	//    │ - audioProvider_.connect(audioProcessor_)                  │
+	//    │ - audioProcessor_.connect(audioContext_.destination)       │
+	//    │                                                            │
+	//    ↓resumeEnded                                                 │
+	//  ┌────┐                                                    │
+	//  │2 録音中│←────────────────────────┐│
+	//  └┬┬──┘                                                  ││
+	//    ││audioProcessor_.onaudioprocess                          ││
+	//    │└────────────────────────────┘│
+	//    │                                                            │
+	//    │pause()                                                     │
+	//    │                                                            │
+	//    ↓pauseStarted                                                │
+	//  ┌────┐                                                    │
+	//  │3       │                                                    │
+	//  └┬───┘                                                    │
+	//    │audioProcessor_.onaudioprocess                              │
+	//    │ - audioStream_.getTracks().forEach(track=>track.stop())    │
+	//    │ - audioProvider_.disconnect()                              │
+	//    │ - audioProcessor_.disconnect()                             │
+	//    ↓                                                            │
+	//  ┌────┐                                                    │
+	//  │4       │                                                    │
+	//  └┬───┘                                                    │
+	//    │audioStream.oninactive                                      │
+	//    │                                                            │
+	//    │pauseStarted                                                │
+	//    └──────────────────────────────┘
+	// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

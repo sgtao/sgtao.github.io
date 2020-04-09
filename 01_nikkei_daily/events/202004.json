@@ -1,0 +1,294 @@
+{
+  "monthly": [
+    {
+      "id": 2004,
+      "name": "朝刊(PDF)",
+      "startdate": "2020-04-09",
+      "color": "#006ad5",
+      "url": "pdf/20200409_Thu_nikkei_daily.pdf"
+    },
+    {
+      "id": 2004,
+      "name": "朝刊(PDF)",
+      "startdate": "2020-04-08",
+      "color": "#00d56a",
+      "url": "pdf/20200408_Wed_nikkei_daily.pdf"
+    },
+    {
+      "id": 2004,
+      "name": "朝刊(PDF)",
+      "startdate": "2020-04-07",
+      "color": "#bf80ff",
+      "url": "pdf/20200407_Tue_nikkei_daily.pdf"
+    },
+    {
+      "id": 2004,
+      "name": "朝刊(PDF)",
+      "startdate": "2020-04-06",
+      "color": "#ffbf80",
+      "url": "pdf/20200406_Mon_nikkei_daily.pdf"
+    },
+    {
+      "id": 2004,
+      "name": "朝刊(PDF)",
+      "startdate": "2020-04-05",
+      "color": "#ff8080",
+      "url": "pdf/20200405_Sun_nikkei_daily.pdf"
+    },
+    {
+      "id": 2004,
+      "name": "朝刊(PDF)",
+      "startdate": "2020-04-04",
+      "color": "#ff8080",
+      "url": "pdf/20200404_Sat_nikkei_daily.pdf"
+    },
+    {
+      "id": 2004,
+      "name": "朝刊(PDF)",
+      "startdate": "2020-04-03",
+      "color": "#80bfff",
+      "url": "pdf/20200403_Fri_nikkei_daily.pdf"
+    },
+    {
+      "id": 2004,
+      "name": "朝刊(PDF)",
+      "startdate": "2020-04-02",
+      "color": "#006ad5",
+      "url": "pdf/20200402_Thu_nikkei_daily.pdf"
+    },
+    {
+      "id": 2004,
+      "name": "朝刊(PDF)",
+      "startdate": "2020-04-01",
+      "color": "#00d56a",
+      "url": "pdf/20200401_Wed_nikkei_daily.pdf"
+    },
+
+    {
+      "id": 2003,
+      "name": "朝刊(PDF)",
+      "startdate": "2020-03-29",
+      "color": "#ff8080",
+      "url": "pdf/20200329_Sun_nikkei_daily.pdf"
+    },
+    {
+      "id": 2003,
+      "name": "朝刊(PDF)",
+      "startdate": "2020-03-30",
+      "color": "#ffbf80",
+      "url": "pdf/20200330_Mon_nikkei_daily.pdf"
+    },
+    {
+      "id": 2003,
+      "name": "朝刊(PDF)",
+      "startdate": "2020-03-31",
+      "color": "#bf80ff",
+      "url": "pdf/20200331_Tue_nikkei_daily.pdf"
+    },
+    {
+      "id": 2003,
+      "name": "朝刊(PDF)",
+      "startdate": "2020-03-22",
+      "color": "#ff8080",
+      "url": "pdf/20200322_Sun_nikkei_daily.pdf"
+    },
+    {
+      "id": 2003,
+      "name": "朝刊(PDF)",
+      "startdate": "2020-03-23",
+      "color": "#ffbf80",
+      "url": "pdf/20200323_Mon_nikkei_daily.pdf"
+    },
+    {
+      "id": 2003,
+      "name": "朝刊(PDF)",
+      "startdate": "2020-03-24",
+      "color": "#bf80ff",
+      "url": "pdf/20200324_Tue_nikkei_daily.pdf"
+    },
+    {
+      "id": 2003,
+      "name": "朝刊(PDF)",
+      "startdate": "2020-03-25",
+      "color": "#00d56a",
+      "url": "pdf/20200325_Wed_nikkei_daily.pdf"
+    },
+    {
+      "id": 2003,
+      "name": "朝刊(PDF)",
+      "startdate": "2020-03-26",
+      "color": "#006ad5",
+      "url": "pdf/20200326_Thu_nikkei_daily.pdf"
+    },
+    {
+      "id": 2003,
+      "name": "朝刊(PDF)",
+      "startdate": "2020-03-27",
+      "color": "#80bfff",
+      "url": "pdf/20200327_Fri_nikkei_daily.pdf"
+    },
+    {
+      "id": 2003,
+      "name": "朝刊(PDF)",
+      "startdate": "2020-03-28",
+      "color": "#ff8080",
+      "url": "pdf/20200328_Sat_nikkei_daily.pdf"
+    },
+    {
+      "id": 2003,
+      "name": "朝刊(PDF)",
+      "startdate": "2020-03-15",
+      "color": "#ff8080",
+      "url": "pdf/20200315_Sun_nikkei_daily.pdf"
+    },
+    {
+      "id": 2003,
+      "name": "朝刊(PDF)",
+      "startdate": "2020-03-16",
+      "color": "#ffbf80",
+      "url": "pdf/20200316_Mon_nikkei_daily.pdf"
+    },
+    {
+      "id": 2003,
+      "name": "朝刊(PDF)",
+      "startdate": "2020-03-17",
+      "color": "#bf80ff",
+      "url": "pdf/20200317_Tue_nikkei_daily.pdf"
+    },
+    {
+      "id": 2003,
+      "name": "朝刊(PDF)",
+      "startdate": "2020-03-18",
+      "color": "#00d56a",
+      "url": "pdf/20200318_Wed_nikkei_daily.pdf"
+    },
+    {
+      "id": 2003,
+      "name": "朝刊(PDF)",
+      "startdate": "2020-03-19",
+      "color": "#006ad5",
+      "url": "pdf/20200319_Thu_nikkei_daily.pdf"
+    },
+    {
+      "id": 2003,
+      "name": "朝刊(PDF)",
+      "startdate": "2020-03-20",
+      "color": "#80bfff",
+      "url": "pdf/20200320_Fri_nikkei_daily.pdf"
+    },
+    {
+      "id": 2003,
+      "name": "朝刊(PDF)",
+      "startdate": "2020-03-21",
+      "color": "#ff8080",
+      "url": "pdf/20200321_Sat_nikkei_daily.pdf"
+    },
+    {
+      "id": 2003,
+      "name": "朝刊(PDF)",
+      "startdate": "2020-03-08",
+      "color": "#ff8080",
+      "url": "pdf/20200308_Sun_nikkei_daily.pdf"
+    },
+    {
+      "id": 2003,
+      "name": "朝刊(PDF)",
+      "startdate": "2020-03-09",
+      "color": "#ffbf80",
+      "url": "pdf/20200309_Mon_nikkei_daily.pdf"
+    },
+    {
+      "id": 2003,
+      "name": "朝刊(PDF)",
+      "startdate": "2020-03-10",
+      "color": "#bf80ff",
+      "url": "pdf/20200310_Tue_nikkei_daily.pdf"
+    },
+    {
+      "id": 2003,
+      "name": "朝刊(PDF)",
+      "startdate": "2020-03-11",
+      "color": "#00d56a",
+      "url": "pdf/20200311_Wed_nikkei_daily.pdf"
+    },
+    {
+      "id": 2003,
+      "name": "朝刊(PDF)",
+      "startdate": "2020-03-12",
+      "color": "#006ad5",
+      "url": "pdf/20200312_Thu_nikkei_daily.pdf"
+    },
+    {
+      "id": 2003,
+      "name": "朝刊(PDF)",
+      "startdate": "2020-03-13",
+      "color": "#80bfff",
+      "url": "pdf/20200313_Fri_nikkei_daily.pdf"
+    },
+    {
+      "id": 2003,
+      "name": "朝刊(PDF)",
+      "startdate": "2020-03-14",
+      "color": "#ff8080",
+      "url": "pdf/20200314_Sat_nikkei_daily.pdf"
+    },
+    {
+      "id": 2003,
+      "name": "テスト",
+      "startdate": "2020-03-01",
+      "color": "#FFB128",
+      "url": ""
+    },
+    {
+      "id": 2003,
+      "name": "テスト",
+      "startdate": "2020-03-02",
+      "color": "#FFB128",
+      "url": ""
+    },
+    {
+      "id": 2003,
+      "name": "テスト",
+      "startdate": "2020-03-03",
+      "color": "#FFB128",
+      "url": ""
+    },
+    {
+      "id": 2003,
+      "name": "テスト",
+      "startdate": "2020-03-04",
+      "color": "#FFB128",
+      "url": ""
+    },
+    {
+      "id": 2003,
+      "name": "朝刊(PDF)",
+      "startdate": "2020-03-05",
+      "color": "#FFB128",
+      "url": "pdf/20200305_Thu_nikkei_daily.pdf"
+    },
+    {
+      "id": 2003,
+      "name": "朝刊(PDF)",
+      "startdate": "2020-03-06",
+      "color": "#FFB128",
+      "url": "pdf/20200306_Fri_nikkei_daily.pdf"
+    },
+    {
+      "id": 2003,
+      "name": "朝刊(PDF)",
+      "startdate": "2020-03-07",
+      "color": "#FFB128",
+      "url": "pdf/20200307_Sat_nikkei_daily.pdf"
+    },
+    
+
+    {
+      "id": 1,
+      "name": "This is a JSON event",
+      "startdate": "2020-03-01",
+      "color": "#EF44EF",
+      "url": ""
+    }
+  ]
+}

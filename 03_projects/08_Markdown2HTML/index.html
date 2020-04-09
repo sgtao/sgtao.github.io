@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <title>Markdown to HTML</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <header class="uk-container uk-container-expand uk-margin-small-top"><h1 class="uk-text-center">Markdown→HTML変換</h1></header>
+
+    <section class="markdown2html">
+      <div class="left-side">
+        <section class="markdownarea">
+          <h2>Markdownの入力フォーム</h2>
+          <form id="editor-form" class="">
+            <textarea id="editor" name="markdown" rows="8" cols="50%"></textarea>
+          </form>
+          <button type="button" id="preview_button">Preview</button>
+        </section>
+        <hr style="border: 3px solid #ebebeb;" >
+        <section class="htmlarea">
+          <h2>変換結果コピペエリア</h2>
+          <form id="editor-form" class="">
+            <textarea onclick="this.select();" id="result" class="uk-textarea" name="result"  rows="8"  cols="50%" readonly></textarea>
+          </form>
+          <button type="button" id="copy_button">Copy text</button>
+        </section>
+      </div>
+
+      <div class="right-side">
+        <section class="previewarea">
+          <h2>HTMLに変換した結果</h2>
+          <div class="col-md-12 ml-auto mr-auto text-left" style="border: 3px solid #ebebeb;">
+            <div class="preview" id="marked-preview"></div>
+          </div>
+        </section>
+      </div>
+
+    </section>
+
+    <footer>
+      <p class="uk-text-center">Copyright 2019 sg.tao.so, 2018 konightch All Rights Reserved.</p>
+    </footer>
+
+  </div>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css">
+  <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="http://code.jquery.com/jquery.js"></script>
+  <script src="script/main.js"></script>
+</body>
+</html>
