@@ -10,9 +10,15 @@
 </head>
 <body>
 
+  <header class="uk-container uk-container-expand uk-margin-small-top">
+    <h1 class="uk-text-center">Markdown→HTML変換</h1>
+    <p>
+      Qiita「<a href="https://qiita.com/_carbonara_/items/274b26ae45c7d4372bdf" target="_blank">Markdown→HTMLに変換したい
+</a>」の記事をもとに変換用サイトを準備しました。
+    </p>
+  </header>
+  
   <div class="container">
-    <header class="uk-container uk-container-expand uk-margin-small-top"><h1 class="uk-text-center">Markdown→HTML変換</h1></header>
-
     <section class="markdown2html">
       <div class="left-side">
         <section class="markdownarea">
@@ -29,6 +35,7 @@
             <textarea onclick="this.select();" id="result" class="uk-textarea" name="result"  rows="8"  cols="50%" readonly></textarea>
           </form>
           <button type="button" id="copy_button">Copy text</button>
+          <button type="button" id="save_button">Save HTML</button>
         </section>
       </div>
 
@@ -42,17 +49,16 @@
       </div>
 
     </section>
-
-    <footer>
-      <p class="uk-text-center">Copyright 2019 sg.tao.so, 2018 konightch All Rights Reserved.</p>
-    </footer>
-
+  
   </div>
-
+  <footer>
+    <p class="uk-text-center">Copyright 2019 sg.tao.so, 2018 konightch All Rights Reserved.</p>
+  </footer>
+  
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css">
-  <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-  <script src="http://code.jquery.com/jquery.js"></script>
+  <script src="script/simplemde.min.js"></script>
+  <script src="script/marked.min.js"></script>
+  <script src="script/jquery-1.12.4.min.js"></script>
   <script src="script/main.js"></script>
 </body>
 </html>
