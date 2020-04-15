@@ -19,8 +19,6 @@
   })
 
   marked.setOptions({
-    sanitize: true,
-    sanitizer: escape,
     breaks : true
   });
 
