@@ -3,6 +3,41 @@
     {
       "id": 2004,
       "name": "朝刊(PDF)",
+      "startdate": "2020-04-14",
+      "color": "#bf80ff",
+      "url": "pdf/20200414_Tue_nikkei_daily.pdf"
+    },
+    {
+      "id": 2004,
+      "name": "朝刊(休刊)",
+      "startdate": "2020-04-13",
+      "color": "#bbb",
+      "url": ""
+    },
+    {
+      "id": 2004,
+      "name": "朝刊(PDF)",
+      "startdate": "2020-04-12",
+      "color": "#ff8080",
+      "url": "pdf/20200412_Sun_nikkei_daily.pdf"
+    },
+    {
+      "id": 2004,
+      "name": "朝刊(PDF)",
+      "startdate": "2020-04-11",
+      "color": "#ff8080",
+      "url": "pdf/20200411_Sat_nikkei_daily.pdf"
+    },
+    {
+      "id": 2004,
+      "name": "朝刊(PDF)",
+      "startdate": "2020-04-10",
+      "color": "#80bfff",
+      "url": "pdf/20200410_Fri_nikkei_daily.pdf"
+    },
+    {
+      "id": 2004,
+      "name": "朝刊(PDF)",
       "startdate": "2020-04-09",
       "color": "#006ad5",
       "url": "pdf/20200409_Thu_nikkei_daily.pdf"
