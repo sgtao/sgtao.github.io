@@ -21,6 +21,7 @@
   /* mysite section */
   const mysite_images = [
     'img/01_nikkei_daily.png',
+    'img/02_Biz_books.png',
     'img/07_MurphysLaw.png',
     'img/08_Markdown2HTML.png',
     'img/09_AmiVoiceAPI.png',
@@ -28,6 +29,7 @@
   ];
   const mysite_urls = [
     "01_nikkei_daily/index.html",
+    "02_Biz_books/index.html",
     "03_projects/07_MurphysLaw/index.html",
     "03_projects/08_Markdown2HTML/index.html",
     "03_projects/09_AmiVoiceAPI/index.html",
