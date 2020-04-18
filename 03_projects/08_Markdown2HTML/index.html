@@ -13,8 +13,13 @@
   <header class="uk-container uk-container-expand uk-margin-small-top">
     <h1 class="uk-text-center">Markdown→HTML変換</h1>
     <p>
-      Qiita「<a href="https://qiita.com/_carbonara_/items/274b26ae45c7d4372bdf" target="_blank">Markdown→HTMLに変換したい
-</a>」の記事をもとに変換用サイトを準備しました。
+      Qiita「<a href="https://qiita.com/_carbonara_/items/274b26ae45c7d4372bdf" target="_blank">Markdown→HTMLに変換したい</a>」の記事をもとに変換用サイトを準備しました。<br>
+      Markdownの書き方は、<a href="https://qiita.com/Qiita/items/c686397e4a0f4f11683d" target="_blank">Markdown記法 チートシート</a>をご参照ください。<br>
+      利用パッケージ：
+      <ol>
+        <li><a href="https://github.com/sparksuite/simplemde-markdown-editor" target="_blank">SimpleMDE（Markdown-Editor）</a></li>
+        <li><a href="https://github.com/markedjs/marked" target="_blank">Marked（convert engine for Markdown to HTML）</a></li>
+      </ol>
     </p>
   </header>
   
@@ -34,14 +39,15 @@
           <form id="editor-form" class="">
             <textarea onclick="this.select();" id="result" class="uk-textarea" name="result"  rows="8"  cols="50%" readonly></textarea>
           </form>
-          <button type="button" id="copy_button">Copy text</button>
-          <button type="button" id="save_button">Save HTML</button>
+          <button type="button" id="result_copy_button">Copy text</button>
         </section>
       </div>
-
+      
       <div class="right-side">
         <section class="previewarea">
           <h2>HTMLに変換した結果</h2>
+          <button type="button" id="save_button" href="#" >Save HTML</button>
+          <!-- <button type="button" id="preview_copy_button">Copy preview</button> -->
           <div class="col-md-12 ml-auto mr-auto text-left" style="border: 3px solid #ebebeb;">
             <div class="preview" id="marked-preview"></div>
           </div>
