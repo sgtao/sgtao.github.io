@@ -19,36 +19,40 @@
 		<style>
 			body {
 				color: #fff;
-				background: url('./images/bg.jpg') center;
+				/* background: url('i') center; */
+				background: url('./images/bg.jpg');
 			}
 		</style>
 		<base target="_blank">
 </head>
 <body>
-	<header id="header" class="red_bg">
-		<div class="container">
+	<div class="container">
+		<header id="header">
 			<h1>【Nikkei Daily list】</h1>
-			<p>日経新聞朝刊の記事一覧のリンクをカレンダー形式で表示する。</p>
+			<div>
+				<p>日経新聞朝刊の記事一覧のリンクをカレンダー形式で表示する。</p>
+				<p>　参照サイト：<a href="https://www.nikkei.com/paper/" target="_blank">日経新聞電子版（朝刊・夕刊）</a></p>
+			</div>
+		</header>
+		<hr>
+		<div class="page">
+			<br>
+			<br><br>
+			<div style="width:100%; max-width:600px; display:inline-block;">
+				<div class="monthly" id="mycalendar"></div>
+			</div>
+			<br><br>
 		</div>
-	</header>
-	<hr>
-	<div class="page">
-		<br>
-		<br><br>
-		<div style="width:100%; max-width:600px; display:inline-block;">
-			<div class="monthly" id="mycalendar"></div>
-		</div>
-		<br><br>
+		<hr>
+		<footer>
+			<ul>
+				<li>
+					参考サイト：<a href="https://github.com/kthornbloom/Monthly" class="button">Monthly.js</a>
+					（※利用法用：<a href="https://creative-rush.site/monthly-js/" target="_blank">CREATIVE RUSH</a>）
+				</li>
+			</ul>
+		</footer>
 	</div>
-	<hr>
-	<footer>
-		<ul>
-			<li>
-				参考サイト：<a href="https://github.com/kthornbloom/Monthly" class="button">Monthly.js</a>
-				（※利用法用：<a href="https://creative-rush.site/monthly-js/" target="_blank">CREATIVE RUSH</a>）
-			</li>
-		</ul>
-	</footer>
 <!-- JS ======================================================= -->
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/monthly.js"></script>
