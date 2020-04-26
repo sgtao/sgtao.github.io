@@ -39,7 +39,7 @@
     let dd = new Date();
     startTime = Date.now();
     startTime_str = dd.toLocaleTimeString();
-    this.className = 'pushed';
+    this.className = 'is-hidden';
     stop.className = '';
     clock.className = 'is-hidden';
     watch.className = 'running';
@@ -54,8 +54,9 @@
     }
     isStarted = false;
     clearTimeout(timerId);
-    this.className = 'pushed';
+    this.className = 'is-hidden';
     start.className = '';
+    clock.className = 'clock';
     watch.className = 'result';
   });
 

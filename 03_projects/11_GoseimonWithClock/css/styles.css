@@ -33,27 +33,25 @@ body {
   font-weight:bold;
   margin-left:1em;
 }
-#start {
-  float: left;
-}
-
-#stop {
-  float: right;
-}
 
 #start, #stop {
+  float: left;
   cursor: pointer;
   font-size: 18px;
   width: 145px;
   background: #eee;
+  border:1px solid black;
   height: 40px;
   line-height: 40px;
   box-shadow: 0 6px 0 #ccc ;
+  text-align: center;
 }
-
 #start.pushed, #stop.pushed {
   margin-top: 3px;
   box-shadow: 0 3px 0 #ccc;
+}
+#start.is-hidden, #stop.is-hidden {
+  display: none;
 }
 
 /* Styles for Text Genbun */
