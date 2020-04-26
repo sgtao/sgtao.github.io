@@ -26,6 +26,7 @@
     'img/08_Markdown2HTML.png',
     'img/09_AmiVoiceAPI.png',
     'img/10_iframePage.png',
+    'img/11_GoseimonWithClock.png',
   ];
   const mysite_urls = [
     "01_nikkei_daily/index.html",
@@ -34,6 +35,7 @@
     "03_projects/08_Markdown2HTML/index.html",
     "03_projects/09_AmiVoiceAPI/index.html",
     "03_projects/10_iframePage",
+    "03_projects/11_GoseimonWithClock",
   ];
   let currentNum = 0;
   
