@@ -19,6 +19,17 @@
   });
   
   /* mysite section */
+  const contents_list = [
+    { id: 1, img: 'img/01_nikkei_daily.png',  url: "01_nikkei_daily/index.html" },
+    { id: 2, img: 'img/02_Biz_books.png',     url: "02_Biz_books/index.html" },
+    { id: 7, img: 'img/07_MurphysLaw.png',    url: "03_projects/index.html" },
+    { id: 8, img: 'img/08_Markdown2HTML.png', url: "03_projects/08_Markdown2HTML/index.html" },
+    { id: 9, img: 'img/09_AmiVoiceAPI.png',   url: "03_projects/09_AmiVoiceAPI/index.html" },
+    { id:10, img: 'img/10_iframePage.png',    url: "03_projects/10_iframePage/index.html" },
+    { id:11, img: 'img/10_iframePage.png',    url: "01_nikkei_daily/index.html" },
+    { id:12, img: 'img/11_GoseimonWithClock.png', url: "03_projects/11_GoseimonWithClock/index.html" },
+    { id:999, img: 'dummy', url: "dummy" }
+  ];
   const mysite_images = [
     'img/01_nikkei_daily.png',
     'img/02_Biz_books.png',
