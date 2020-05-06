@@ -1,9 +1,9 @@
-#container {
+#global-container {
   -webkit-transition: opacity 1s;
   transition: opacity 1s;
 }
 
-.pace-running #container {
+.pace-running #global-container {
   opacity: 0;
   visibility: hidden;
 }
