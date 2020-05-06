@@ -29,13 +29,13 @@ p {
 }
 
 /* video section */
-.container {
-  width: 400px;
+.myvideo {
+  width: 90%;
   margin: 0 auto;
 }
 
-.myvideo {
-  width: 350px;
+#video {
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -50,8 +50,7 @@ p {
 }
 
 .myvideo main img {
-  width: 300px;
-  height: 200px;
+  width: 90%;
   vertical-align: bottom;
 }
 

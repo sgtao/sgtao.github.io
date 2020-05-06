@@ -8,13 +8,17 @@ body {
 .container {
   width: 90%;
   margin: 0 auto;
+  position: relative;
 }
 
 
 /* Styles for clock and stop-watch */
+.clock-area {
+  position: relative;
+  font-size: 18px;
+}
 .clock {
   color:#f00;
-  font-size: 24px;
   font-weight:lighter;
   margin-left:1em;
 }
@@ -22,14 +26,12 @@ body {
   display: none;  
 }
 #stop-watch.running {
-  color:#f00;
-  font-size: 24px;
+  color:#00f;
   font-weight:lighter;
   margin-left:1em;
 }
 #stop-watch.result {
   color:#00f;
-  font-size: 24px;
   font-weight:bold;
   margin-left:1em;
 }
@@ -37,15 +39,17 @@ body {
 #start, #stop {
   float: left;
   cursor: pointer;
-  font-size: 18px;
-  width: 145px;
-  background: #eee;
-  border:1px solid black;
   height: 40px;
-  line-height: 40px;
-  box-shadow: 0 6px 0 #ccc ;
+  width: 145px;
+  background-color: #ccc;
+  color: black;
+  border:1px solid black;
+  line-height: 24px;
+  font-size: 18px;
   text-align: center;
+  margin: 8px 8px;
 }
+
 #start.pushed, #stop.pushed {
   margin-top: 3px;
   box-shadow: 0 3px 0 #ccc;
