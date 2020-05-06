@@ -132,7 +132,7 @@
     }
   
     // pause SlideShow of mysite categories.
-    setMainImage(0);
+    setMainImage(currentNum);
   
   
   };
