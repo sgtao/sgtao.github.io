@@ -2,6 +2,13 @@
   "monthly": [
     {
       "id": 2005,
+      "name": "朝刊(休刊)",
+      "startdate": "2020-05-07",
+      "color": "#bbb",
+      "url": ""
+    },
+    {
+      "id": 2005,
       "name": "朝刊(PDF)",
       "startdate": "2020-05-06",
       "color": "#00d56a",

@@ -66,7 +66,9 @@ p {
 .myvideo nav li {
   list-style: none;
   width: 100px;
-  border: 3px solid #ddd";
+  color: black;
+  background-color: #ddd;
+  border: 1px solid black;
   border-radius: 4px;
   font-size: 12px;
   padding: 4px;
@@ -75,7 +77,9 @@ p {
   user-select: none;
 }
 .myvideo nav li:hover {
-  background: #ddd;
+  color: white;
+  background-color: black;
+  cursor: pointer;
 }
 .myvideo #play, #pause {
   width: 150px;
