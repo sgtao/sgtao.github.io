@@ -2,6 +2,20 @@
   "monthly": [
     {
       "id": 2005,
+      "name": "朝刊(PDF)",
+      "startdate": "2020-05-09",
+      "color": "#ff8080",
+      "url": "pdf/20200509_Sat_nikkei_daily.pdf"
+    },
+    {
+      "id": 2005,
+      "name": "朝刊(PDF)",
+      "startdate": "2020-05-08",
+      "color": "#80bfff",
+      "url": "pdf/20200508_Fri_nikkei_daily.pdf"
+    },
+    {
+      "id": 2005,
       "name": "朝刊(休刊)",
       "startdate": "2020-05-07",
       "color": "#bbb",
