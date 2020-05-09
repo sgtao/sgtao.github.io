@@ -11,21 +11,26 @@ p {
   line-height: 2;
 }
 
-.container {
+.global-container {
   margin: 0 auto;
-  width: 90%;
   width: 100%;
-  display:flex ;
-  flex-direction: column;
+  display: inline-block;
+  position: relative;
 }
 
 header {
 	height: auto;
   align-items: flex-start;
 }
+.container {
+  width: 90%;
+  display:flex ;
+  flex-direction: column;
+}
 footer {
   line-height: 0.5;
   align-items: flex-end;
+  text-align: center;
 }
 
 
@@ -36,7 +41,7 @@ footer {
 .left-side {
   float: left;
   position: center;
-  width: 70%;
+  width: 50%;
   margin: 20px;
 }
 .markdownarea {
@@ -51,7 +56,7 @@ footer {
   background: #fff;
   float: right;
   position: center;
-  width: 30%;
+  width: 40%;
   margin: 20px;
 }
 .previewarea {
@@ -164,5 +169,8 @@ footer {
 }
 
 
+.reference {
+  line-height: 1;
+}
 
 
