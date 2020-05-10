@@ -31,33 +31,43 @@
     }, 20);
   }
 
-  start.addEventListener('click', function () {
-    if (isStarted === true) {
-      return;
+  function toggleStartStop() {
+    if (isStarted === false) { // Stop to Start procedure
+      isStarted = true;
+      let dd = new Date();
+      startTime = Date.now();
+      startTime_str = dd.toLocaleTimeString();
+      start.className = 'is-hidden';
+      stop.className = '';
+      clock.className = 'is-hidden';
+      watch.className = 'running';
+      countUp();
+    } else {  // Start to Stop procedure
+      let resultTime, diff;
+      isStarted = false;
+      clearTimeout(timerId);
+      stop.className = 'is-hidden';
+      start.className = '';
+      clock.className = 'clock';
+      watch.className = 'result';
     }
-    isStarted = true;
-    let dd = new Date();
-    startTime = Date.now();
-    startTime_str = dd.toLocaleTimeString();
-    this.className = 'is-hidden';
-    stop.className = '';
-    clock.className = 'is-hidden';
-    watch.className = 'running';
-    countUp();
+  }
+
+  start.addEventListener('click', function () {
+    if (isStarted === true) { return; } 
+    toggleStartStop();
   });
 
   stop.addEventListener('click', function () {
-    var resultTime;
-    var diff;
-    if (isStarted === false) {
-      return;
-    }
-    isStarted = false;
-    clearTimeout(timerId);
-    this.className = 'is-hidden';
-    start.className = '';
-    clock.className = 'clock';
-    watch.className = 'result';
+    if (isStarted === false) { return; }
+    toggleStartStop();
+  });
+
+  // Short-cut Keymap definition
+  document.addEventListener('keypress', (event) => {
+    let keyName = event.key;
+    console.log("detect press" + `keydown:${keyName}`);
+    if ((keyName === "S")||(keyName === "s")) { toggleStartStop(); }
   });
 
   /* window actions */
