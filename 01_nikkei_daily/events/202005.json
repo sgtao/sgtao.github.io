@@ -3,6 +3,27 @@
     {
       "id": 2005,
       "name": "朝刊(PDF)",
+      "startdate": "2020-05-20",
+      "color": "#00d56a",
+      "url": "pdf/20200520_Wed_nikkei_daily.pdf"
+    },
+    {
+      "id": 2005,
+      "name": "朝刊(PDF)",
+      "startdate": "2020-05-19",
+      "color": "#bf80ff",
+      "url": "pdf/20200519_Tue_nikkei_daily.pdf"
+    },
+    {
+      "id": 2005,
+      "name": "朝刊(PDF)",
+      "startdate": "2020-05-18",
+      "color": "#ffbf80",
+      "url": "pdf/20200518_Mon_nikkei_daily.pdf"
+    },
+    {
+      "id": 2005,
+      "name": "朝刊(PDF)",
       "startdate": "2020-05-17",
       "color": "#ff8080",
       "url": "pdf/20200517_Sun_nikkei_daily.pdf"

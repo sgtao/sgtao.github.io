@@ -10,7 +10,18 @@
   <header>
     <h1>神奈川県自治体トピック</h1>
     <p>神奈川県内の県庁および市町村の記者発表資料を閲覧できます。知りたい地区名のタブをクリックしてください。</p>
+    <div id="select-area">
+      <span>エリアの選択：</span>
+      <span><input type="checkbox" id="chkbox_area" name="pref" checked="checked" disabled="disabled" />県</span>
+      <span><input type="checkbox" id="chkbox_area" name="ordinance" checked="checked" />政令市</span>
+      <span><input type="checkbox" id="chkbox_area" name="general" />一般市</span>
+      <span><input type="checkbox" id="chkbox_area" name="town" />町</span>
+      <span><input type="checkbox" id="chkbox_area" name="village" />村</span>
+      <span><input type="submit" id="btn_reload" value="選択反映(再読込み)"></span>
+      <span class='clearLS' style='font-size:smaller'>cls.</span>
+    </div>
   </header>
+  <hr>
   <div class="container">
     <div class="js-tabs" id="basic_tabs">
       <ul class="tab_menu" id="tab_menus">
