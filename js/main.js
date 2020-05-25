@@ -26,8 +26,8 @@
     { id: 8, img: 'img/08_Markdown2HTML.png', url: "03_projects/08_Markdown2HTML/index.html" },
     { id: 9, img: 'img/09_AmiVoiceAPI.png',   url: "03_projects/09_AmiVoiceAPI/index.html" },
     { id:10, img: 'img/10_iframePage.png',    url: "03_projects/10_iframePage/index.html" },
-    { id:11, img: 'img/10_iframePage.png',    url: "01_nikkei_daily/index.html" },
-    { id:12, img: 'img/11_GoseimonWithClock.png', url: "03_projects/11_GoseimonWithClock/index.html" },
+    { id:11, img: 'img/11_GoseimonWithClock.png', url: "03_projects/11_GoseimonWithClock/index.html" },
+    { id: 12, img: 'img/12_webQRcoder.png', url: "https://sgtao.github.io/webQRcoder/" },
     { id:999, img: 'dummy', url: "dummy" }
   ];
   const mysite_images = [
@@ -38,6 +38,7 @@
     'img/09_AmiVoiceAPI.png',
     'img/10_iframePage.png',
     'img/11_GoseimonWithClock.png',
+    'img/12_webQRcoder.png',
   ];
   const mysite_urls = [
     "01_nikkei_daily/index.html",
@@ -47,6 +48,7 @@
     "03_projects/09_AmiVoiceAPI/index.html",
     "03_projects/10_iframePage",
     "03_projects/11_GoseimonWithClock",
+    "https://sgtao.github.io/webQRcoder/",
   ];
   let currentNum = 0;
   
