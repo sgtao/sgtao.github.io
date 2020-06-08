@@ -1,0 +1,41 @@
+/*********************************** 
+  Styleshee: ベーススタイル
+ ***********************************/
+
+body {
+  font-family: 'Kameron', 'Noto Sans JP', sans-serif; 
+}
+/* フォントサイズ（モバイル用のフォントサイズ）*/
+.font-sm  {
+  font-size: 14px;
+}
+.font-md {
+  font-size: 17px;
+}
+.font-lr {
+  font-size: 17px;
+}
+.font-lg {
+  font-size: 25px;
+}
+
+/* マージンサイズ */
+.mb-sm {
+  margin-bottom: 16px !important;
+}
+.pb-sm {
+  padding-bottom: 16px !important;
+}
+.mb-lg {
+  margin-bottom: 80px !important;
+}
+.pb-lg {
+  padding-bottom: 80px !important;
+}
+
+/* コンテンツの画面幅 */
+.content-width {
+  width: 90%;
+  margin: 0 auto;
+  max-width: $contentMaxWidth;
+}
