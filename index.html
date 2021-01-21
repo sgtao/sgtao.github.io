@@ -1,32 +1,155 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE type="html">
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link type="stylesheet" href="styles/style.css">
-  <title>MySite of sg.tao</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MySite</title>
+  <link rel="icon" href="favicon.ico">
+  <script src="https://kit.fontawesome.com/84eeee1ba1.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/loader.css">
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/hero_slider.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <div class="global-container">
-    <header>
-      <h1>MySite of sg.tao</h1>
+  <div id="global-container" class="wrap">
+    <header id="header" class="red_bg">
+      <div class="container">
+        <h1>MySite</h1>
+        <div id="digital-clock"></div>
+      </div>
     </header>
-    <hr>
+  
     <div class="container">
-      <ul>
-        <li><a href="biz_books/" target="_blank">ビジネススキル大全【書籍メモ】</a></li>
-        <li><a href="markdown2html/" target="_blank">Markdown→HTML変換</a></li>
-        <li><a href="kanagawa_govs_topics/" target="_blank">神奈川県自治体トピック</a></li>
-        <li><a href="goseimon-clock/" target="_blank">五ヶ条の御誓文と時計</a></li>
-        <li><a href="webQRcoder/" target="_blank">webQRcoder</a></li>
-        <li><a href="charts_Kanagawa_pop/" target="_blank">神奈川県人口情報のチャート（charts_Kanagawa_pop）</a></li>
-        <li><a href="TextSplitter_for_TransService/" target="_blank">TextSplitter for 翻訳サービス(Google翻訳)</a></li>
-      </ul>
-    </div>
-    <hr>
-    <footer>
-      <p>Copyright &copy 2020 <a href="https://github.com/sgtao/" target="_blank">sgtao.github.io</a> All Rights Reserved.</p>
+      <section id="homeinfra" class="infra">
+        <p class="to_pagetop"><a href="#cloud">▼NEXT</a></p>
+        <h1 data-subtitle="- Home infrastructure -" class="section-title">自宅インフラ</h1>
+        <div class="buttons">
+            <ul class="btn-list">
+              <li class="btn"><a href="http://192.168.10.1" target='_blank'>Router(NTT)<img src="img/icon_router.png"></a></li>
+              <li class="btn"><a href="http://192.168.10.2" target='_blank'>AP(Elecom)<i class="fas fa-wifi"></i></a></li>
+              <li class="btn"><a href="http://192.168.10.3" target='_blank'>AP(Buffero)<i class="fas fa-wifi"></i></a></li>
+              <li class="btn"><a href="links/compare_pi+pc/index.html" target='_blank'>Bench_Pi+PC<i class="fas fa-file"></i></a></li>
+              <li class="btn"><a href="links/home-net.html" target='_blank'>Home Network<i class="fas fa-network-wired"></i></a></li>
+            </ul>
+         </div>
+        <div class="buttons">
+            <ul class="btn-list">
+              <li class="btn"><a href="http://192.168.10.5:8081" target='_blank'>Pi2 RaspiNAS<img src="img/icon_nas.png"></a></li>
+              <li class="btn"><a href="http://192.168.10.5:3000" target="_blank">Pi2 my github<i class="fab fa-raspberry-pi"></i></a></li>
+              <li class="btn"><a href="http://192.168.10.9/" target='_blank'>Raspi4 root<i class="fab fa-raspberry-pi"></i></a></li>
+              <li class="btn"><a href="http://192.168.10.7/" target='_blank'>Raspi3 root<i class="fab fa-raspberry-pi"></i></a></li>
+              <li class="btn"><a href="http://192.168.10.5/" target='_blank'>Raspi2 root<i class="fab fa-raspberry-pi"></i></a></li>
+            </ul>
+        </div>
+        <div class="buttons">
+          <ul class="btn-list">
+            <li class="btn"><a href="public_html/index.html" target='_blank'>for public<img src="img/icon_internet.png"></i></a></li>
+            <li class="btn"><a href="links/study_mock/11_lessons" target='_blank'>11_lessons<i class="far fa-folder"></i></a></li>
+            <li class="btn"><a href="links/study_mock/12_projects/" target='_blank'>12_projects<i class="far fa-folder"></i></a></li>
+            <li class="btn"><a href="links/study_mock" target='_blank'>mnt_study<i class="far fa-folder"></i></a></li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="cloud" class="infra">
+        <p class="to_pagetop"><a href="#hero-slider">▼NEXT</a></p>
+        <h1 data-subtitle="- Cloud infrastructure -" class="section-title">クラウドインフラ</h1>
+        <div class="buttons">
+        
+            <ul class="btn-list">
+              <li class="btn"><a href="https://sgtao.github.io/" target="_blank">GitHub.io<i class="fab fa-github"></i></a></li>
+              <li class="btn"><a href="https://github.com/" target="_blank">GitHub <i class="fab fa-github"></i></a></li>
+              <li class="btn"><a href="https://console.firebase.google.com/u/0/?hl=ja&pli=1" target="_blank">Fb-console<img src="img/firebase.ico"></i></a></li>
+              <li class="btn"><a href="https://myportfolio-72787.firebaseapp.com/" target="_blank">Firebase Site<img src="img/firebase.ico"></i></a></li>
+              <li class="btn"><a href="https://dashboard.heroku.com/apps" target="_blank">heroku board<img src="img/heroku-logo.ico"></i></a></li>
+            </ul>
+        </div>
+        <div class="buttons">
+            <ul class="btn-list">
+              <li class="btn"><a href="https://dotinstall.com/lessons" target="_blank">dot-install <img src="img/dotinstall.ico"></a></li>
+              <li class="btn"><a href="https://fujitsu.udemy.com/organization/home/" target="_blank">Udemy FJ<img src="img/udemy.ico"></a></li>
+              <li class="btn"><a href="https://codepen.io/pen/" target="_blank">CodePen<img src="img/codepen.ico"></a></li>
+              <li class="btn"><a href="https://mail.google.com/" target="_blank">Gmail<img src="img/gmail.ico"></a></li>
+              <li class="btn"><a href="https://www.icloud.com/" target="_blank">iCloud<img src="img/icloud.ico"></a></li>
+              <li class="btn"><a href="https://onedrive.live.com/?gologin=1" target="_blank">onedrive<img src="img/icloud.ico"></a></li>
+            </ul>
+        </div>
+      </section>
+  
+      <section  id="hero-slider" class="hero-slider">
+        <p class="to_pagetop"><a href="#footer">▼NEXT</a></p>
+        <h1 data-subtitle="- contents -" class="section-title">コンテンツ集</h1>
+        <div id="content">
+          <div class="hiro">
+            <!-- Slider main container -->
+            <div class="swiper-container">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <div class="hero__title"><a href="biz_books/index.html" target='_blank'>Biz books</a></div>
+                  <img src="img/02_Biz_books.png">
+                </div>
+                <div class="swiper-slide">
+                  <div class="hero__title"><a href="kanagawa_govs_topics/index.html" target='_blank'>Kanagawa Govs. Topics</a></div>
+                  <img src="img/05_KanagawaGovsTopics.png">
+                </div>
+                <div class="swiper-slide">
+                  <div class="hero__title"><a href="MurphysLaw/index.html" target='_blank'>Murphys Law</a></div>
+                  <img src="img/07_MurphysLaw.png">
+                </div>
+                <div class="swiper-slide">
+                  <div class="hero__title"><a href="markdown2html/index.html" target='_blank'>Markdown2HTML</a></div>
+                  <img src="img/08_Markdown2HTML.png">
+                </div>
+                <div class="swiper-slide">
+                  <div class="hero__title"><a href="goseimon-clock/index.html" target='_blank'>Goseimon with Clock</a></div>
+                  <img src="img/11_GoseimonWithClock.png">
+                </div>
+                <div class="swiper-slide">
+                  <div class="hero__title"><a href="webQRcoder/index.html" target='_blank'>webQRcoder</a></div>
+                  <img src="img/12_webQRcoder.png">
+                </div>
+                <div class="swiper-slide">
+                  <div class="hero__title"><a href="charts_Kanagawa_pop/index.html" target='_blank'>charts Kanagawa pop.</a></div>
+                  <img src="img/13_charts_Kanagawa_pop.png">
+                </div>
+                <div class="swiper-slide">
+                  <div class="hero__title"><a href="TextSplitter_for_TransService/index.html" target='_blank'>TextSplitter</a></div>
+                  <img src="img/14_TextSplitter_for_TransService.png">
+                </div>
+                <div class="swiper-slide">
+                  <div class="hero__title"><a href="https://sample-nikkei-kanagawa.herokuapp.com/" target='_blank'>Nikkei Kanagawa Articles</a></div>
+                  <img src="img/15_Nikkei_Kanagawa_Articles.png">
+                </div>
+              </div>
+              <!-- Add Pagination -->
+              <div class="swiper-pagination"></div>
+              <!-- Add Arrows -->
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+    <footer id="footer" class="red_bg">
+      <div class="container">
+        <p class="to_pagetop"><a href="#header" style="color:white">▲TOP</a></p>
+        <p>Copyright © 2020 sg.tao.so@gmail.com All Rights Reserved.</p>
+      </div>
+      <!-- <div id="page_top"><a href="#">▲Top</a></div>       -->
+      <!-- <div id="page_top"><a href="javascript:window.scroll(0,0)">▲Top</a></div>       -->
+      <div id="page_top"><p>▲Top</p></div>      
     </footer>
   </div>
+
+  <script type="text/javascript" src="./js/pace.min.js"></script>
+  <script type="text/javascript" src="./js/swiper.min.js"></script>
+  <script type="text/javascript" src="./js/hero-slider.js"></script>
+  <script type="text/javascript" src="./js/anime.min.js"></script>
+  <script type="text/javascript" src="./js/main.js"></script>
+
 </body>
 </html>
