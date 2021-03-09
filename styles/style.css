@@ -279,7 +279,10 @@ footer {
     margin-bottom: 150px !important; }
 
   .pb-lg, .hero {
-    padding-bottom: 150px !important; } }
+    padding-bottom: 150px !important; }
+
+  .header__nav {
+    width: 400px; } }
 @media (min-width: 1280px) {
   /******************************************************************
   

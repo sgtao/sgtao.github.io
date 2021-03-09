@@ -22,3 +22,9 @@ Stylesheet: 960px以上のモニタで適用
   padding-bottom: 150px !important;
 }
 
+// modify style of header 
+.header {
+  &__nav {
+    width: 400px;
+  }
+}
