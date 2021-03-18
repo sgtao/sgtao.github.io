@@ -1,36 +1,24 @@
-$cMenuClose: $cBlack;
-$cMenuOpen: $cBlack;
+$cMenuClose: white;
+$cMenuOpen: white;
+$cBlack: black;
+$cWhite: white;
+$cSubtitle: #535353;
+
+#container {
+    position: relative;
+    background-color: $cWhite;
+    height: 100vh;
+    z-index: 2;
+    transition: all 1s ease;
+}
+
 
 .mobile-menu {
     position: fixed;
     right: 0;
     top: 60px;
-    width: 300px;
+    width: 200px;
 
-    & .logo {
-        padding: 0 40px;
-        font-size: 38px;
-    }
-
-    &__btn {
-        background-color: unset;
-        border: none;
-        outline: none !important;
-        cursor: pointer;
-    
-        & > span {
-            background-color: $cMenuClose;
-            width: 35px;
-            height: 2px;
-            display: block;
-            margin-bottom: 9px;
-            transition: transform 0.7s;
-    
-            &:last-child {
-                margin-bottom: 0;
-            }
-        }
-    }
     &__cover {
         position: absolute;
         top: 0;
@@ -42,8 +30,8 @@ $cMenuOpen: $cBlack;
         visibility: hidden;
         transition: opacity 1s;
         cursor: pointer;
-        z-index: 200;
     }
+
     &__main {
         padding: 0;
         perspective: 2000px;
@@ -52,6 +40,7 @@ $cMenuOpen: $cBlack;
     &__item {
         list-style: none;
         display: block;
+        width: 200px;
         transform: translate3d(0, 0, -1000px);
         padding: 0 40px;
         transition: transform 0.3s, opacity 0.2s;
@@ -61,17 +50,53 @@ $cMenuOpen: $cBlack;
         display: block;
         margin-top: 30px;
         color: $cBlack;
-        text-decoration: none !important;
+        text-decoration: none;
     }
+    &__top {
+        background-color: relative;
+        height: 100px;
+        display: flex;
+        justify-content: flex-end;
+        align-item: center;
+    }
+    &__btn {
+        background-color: $cWhite;
+        height: 100px;
+        background-color: unset;
+        border: none;
+        outline: none !important;
+        cursor: pointer;
+
+        & > span {
+            background-color: $cMenuClose;
+            width: 35px;
+            height: 2px;
+            display: block;
+            margin-bottom: 9px;
+            transition: transform 0.7s;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    &___main-title {
+        font-weight: 600;
+        font-size: 36px;
+    }
+    &___sub-title {
+        display: block; // 折り返すために画面いっぱいに表示するblockを指定
+        font-size: 24px;
+        color: $cSubtitle;
+}    
 }
 
 .menu-open {
     & #container {
-        transform: translate(-300px, 60px);
+        transform: translate(-200px, 50px);
         box-shadow: 0 8px 40px -10px rgba(0, 0, 0, 0.8);
     }
-    
-    & .mobile-menu {
+    .mobile-menu {
         &__cover {
             opacity: 1;
             visibility: visible;
@@ -82,14 +107,14 @@ $cMenuOpen: $cBlack;
 
             @for $i from 1 through 5 {
                 &:nth-child(#{$i}) {
-                    transition-delay: $i * 0.07s;
+                    transition-delay: $i * 0.7s;
                 }
             }
         }
         &__btn {
             & > span {
                 background-color: $cMenuOpen;
-    
+        
                 &:nth-child(1) {
                     transition-delay: 70ms;
                     transform: translateY(11px) rotate(135deg);
@@ -105,4 +130,6 @@ $cMenuOpen: $cBlack;
             }
         }
     }
+
 }
+

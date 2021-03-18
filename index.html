@@ -16,29 +16,34 @@
   </head>
   <body>
     <div id="global-container">
+      <nav class="mobile-menu">
+        <ul class="mobile-menu__main">
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__main-title"  href="#cloud">Cloud Infra.</a>
+            <span class="mobile-menu__sub-title">クラウドサービス</span>
+          </li>
+          <li class="mobile-menu__item">
+            <a  class="mobile-menu__main-title" href="#content">Contents</a>
+            <span class="mobile-menu__sub-title">このサイトのコンテンツ</span>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__main-title" href="#lessons">Lessons</a>
+            <span class="mobile-menu__sub-title">学習サイトの練習コンテンツ</span>
+          </li>
+        </ul>
+      </nav>
       <div id="container">
         <div class="mobile-menu__cover"></div>
-        <div class="nav-trigger"></div>
         <header class="header blue_bg">
-          <div class="header__inner appear up">
-            <div class="logo item">
-              <!-- <img src="favicon.ico" alt="" class="logo__img" /> -->
-              <span class="logo__mysite font-lg">MySite</span>
-            </div>
-            <nav class="header__nav">
-              <ul class="header__ul font-lr ">
-                <li class="header__li item"><a href="#cloud">Cloud Infra.</a></li>
-                <li class="header__li item"><a href="#content">Contents</a></li>
-                <li class="header__li item hide">
-                  <a class="btn filled" href="#lessons">Lesson memos</a>
-                </li>
-              </ul>
-            </nav>
-            <button class="mobile-menu__btn hide">
+          <div class="mobile-menu__top">
+            <button class="mobile-menu__btn">
               <span></span>
               <span></span>
               <span></span>
             </button>
+          </div>
+          <div class="header__inner appear up">
+            <span class="logo__mysite font-lg">MySite</span>
           </div>
         </header>
 
@@ -86,16 +91,17 @@
               <li class="btn"><a href="https://console.firebase.google.com/u/0/?hl=ja&pli=1" target="_blank">Fb-console<img src="img/firebase.ico"></i></a></li>
               <li class="btn"><a href="https://myportfolio-72787.firebaseapp.com/" target="_blank">Firebase Site<img src="img/firebase.ico"></i></a></li>
               <li class="btn"><a href="https://dashboard.heroku.com/apps" target="_blank">heroku board<img src="img/heroku-logo.ico"></i></a></li>
-              <li class="btn"><a href="https://sample-nikkei-kanagawa.herokuapp.com/" target="_blank">Nikkei Kana.<img src="img/plotly.ico"></a></li>
-              <li class="btn"><a href="https://sample-kanaloco-articles.herokuapp.com/" target="_blank">Kanaloco Area<img src="img/plotly.ico"></a></li>
+              <li class="btn"><a href="https://glitch.com/" target="_blank">Glitch<img src="img/glitch-log.ico"></i></a></li>
+              <li class="btn"><a href="https://codepen.io/pen/" target="_blank">CodePen<img src="img/codepen.ico"></a></li>
+              <li class="btn"><a href="https://editor.p5js.org/" target="_blank">p5js web editor<img src="img/p5js.ico"></i></a></li>
             </ul>
             </ul>
           </div>
           <div class="buttons">
             <ul class="btn-list">
               <li class="btn"><a href="https://dotinstall.com/lessons" target="_blank">dot-install <img src="img/dotinstall.ico"></a></li>
-              <li class="btn"><a href="https://codepen.io/pen/" target="_blank">CodePen<img src="img/codepen.ico"></a></li>
-              <li class="btn"><a href="https://glitch.com/" target="_blank">Glitch<img src="img/glitch-log.ico"></i></a></li>
+              <li class="btn"><a href="https://sample-nikkei-kanagawa.herokuapp.com/" target="_blank">Nikkei Kana.<img src="img/plotly.ico"></a></li>
+              <li class="btn"><a href="https://sample-kanaloco-articles.herokuapp.com/" target="_blank">Kanaloco Area<img src="img/plotly.ico"></a></li>
               <li class="btn"><a href="https://mail.google.com/" target="_blank">Gmail<img src="img/gmail.ico"></a></li>
               <li class="btn"><a href="https://www.icloud.com/" target="_blank">iCloud<img src="img/icloud.ico"></a></li>
               <li class="btn"><a href="https://onedrive.live.com/?gologin=1" target="_blank">onedrive<img src="img/icloud.ico"></a></li>
@@ -154,6 +160,10 @@
           </div>
           <hr>
         </section>
+        <hr>
+
+        <section id="lessons">
+        </section> 
         <footer id="footer" class="blue_bg">
           <div class="container">
             <p class="to_pagetop"><a href="#" >▲TOP</a></p>
@@ -161,9 +171,9 @@
           </div>
           <!-- <div id="page_top"><a href="#">▲Top</a></div>       -->
           <!-- <div id="page_top"><a href="javascript:window.scroll(0,0)">▲Top</a></div>       -->
-          <div id="page_top"><p>▲Top</p></div>      
         </footer>
       </div>
+      <div id="page_top"><p>▲Top</p></div>      
     </div>
     <script src="scripts/vendors/swiper.min.js"></script>
     <script src="scripts/vendors/TweenMax.min.js"></script>

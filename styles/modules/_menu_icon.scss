@@ -1,0 +1,46 @@
+// menu_icon
+$cBlack: black;
+$cWhite: white;
+
+.mobile-menu__btn {
+    background-color: unset;
+    border: none;
+    outline: none !important;
+    cursor: pointer;
+
+    & > span {
+        background-color: $cWhite;
+        width: 35px;
+        height: 2px;
+        display: block;
+        margin-bottom: 9px;
+        transition: transform 0.7s;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.mobile-menu-open {
+    background-color: $cBlack;
+
+    & .menu__btn {
+        & > span {
+            background-color: $cWhite;
+
+            &:nth-child(1) {
+                transition-delay: 70ms;
+                transform: translateY(11px) rotate(135deg);
+            }
+            &:nth-child(2) {
+                transition-delay: 0s;
+                transform:  translateX(-18px) scaleX(0);
+            }
+            &:nth-child(3) {
+                transition-delay: 140ms;
+                transform: translateY(-11px) rotate(-135deg);
+            }
+        }
+    }
+}

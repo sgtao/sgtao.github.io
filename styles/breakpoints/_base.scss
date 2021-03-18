@@ -80,19 +80,13 @@ img {
 }
 // header
 .header {
-  padding: 40px 0;
-  text-align: left;
-
-  &__nav {
-    display: block;
-    width: 250px;
-    & .header__ul {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      justify-content: space-between;
-      list-style: none;
-    }
+  position: relative;
+  height: 100px;
+  &__inner {
+    position: absolute;
+    top: 20px;
+    padding: 0 0 20px 20px;
+    text-align: left;
   }
 }
 
