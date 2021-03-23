@@ -23,8 +23,14 @@ class Main {
         new MobileMenu();
         this.hero = new HeroSlider('.swiper-container');
         Pace.on('done', this._paceDone.bind(this));
-        console.log(this.btn_page_top)
+        // console.log(this.btn_page_top)
         init_page_top(this.btn_page_top);
+
+        // callback for PageObserve of some sections
+        this._scrollInit(); 
+        const so = new ScrollObserver('.cover-slide', this._inviewAnimation);
+
+
         // decide to show or hidden HomeNetwork links
         let locate_host = location.host;
         let locate_url = new String();
@@ -43,6 +49,7 @@ class Main {
     }
 
     _inviewAnimation(el, inview) {
+        console.log(this);
         if(inview) {
             el.classList.add('inview');
         }else {
@@ -92,8 +99,8 @@ class Main {
     }
 
     _scrollInit() {
-        this.observers = new ScrollObserver('.nav-trigger', this._navAnimation.bind(this), {once: false});
-        this.observers = new ScrollObserver('.cover-slide', this._inviewAnimation);
+        // this.observers = new ScrollObserver('.nav-trigger', this._navAnimation.bind(this), {once: false});
+        // this.observers = new ScrollObserver('.cover-slide', this._inviewAnimation);
         this.observers = new ScrollObserver('.appear', this._inviewAnimation);
         this.observers = new ScrollObserver('.tween-animate-title', this._textAnimation, {rootMargin: "-200px 0px"});
         this.observers = new ScrollObserver('.swiper-container', this._toggleSlideAnimation.bind(this), {once: false});

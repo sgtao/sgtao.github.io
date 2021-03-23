@@ -42,6 +42,16 @@ img {
 .hide {
   display:none;
 }
+.main-title {
+  @extend .font-lg;
+  font-weight: 600;
+  margin-bottom: 0;
+  display: block;
+}
+.sub-title {
+  @extend .font-sm;
+  color: $cSubTitle;
+}
 
 // section background
 .container section {
@@ -127,6 +137,33 @@ img {
 
 .infra.hide {
   display: none;
+}
+
+// lessons section
+.lessons {
+  @extend .content-width;
+  
+  &__inner {
+    margin: 0 auto;
+    text-align: center;
+    width: 400px;
+  }
+  &__item {
+    text-align: left;
+    width: 400px;
+    margin-bottom: 100px;
+    max-width: $contentMaxWidth;
+
+    &:nth-child(even) {
+      background-color: $cBgGray;
+    }
+  }
+  &__title {
+    @extend .sub-title;
+  }
+  &__image {
+    width: 400px;
+  }
 }
 
 /* footer */
