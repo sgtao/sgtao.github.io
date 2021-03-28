@@ -513,26 +513,22 @@ img {
   margin: 0 30 0 30;
   padding: 10px 20px;
   width: 80%; }
-
-.buttons .btn-list .btn {
-  display: inline-block;
-  background-color: lightgreen;
-  color: black;
-  border-color: black;
-  text-align: center;
-  text-decoration: none;
-  padding: 8px 0;
-  border: solid;
-  border-width: 1px;
-  border-radius: 5px;
-  opacity: 0.6; }
-
-.buttons .btn-list .btn img, i {
-  width: 1em;
-  padding: 0 0.3em; }
-
-.buttons .btn-list .btn:hover {
-  opacity: 1.0; }
+  .buttons .btn-list > .btn {
+    display: inline-block;
+    background-color: rgba(75, 169, 75, 0.3);
+    color: black;
+    border-color: black;
+    text-align: center;
+    text-decoration: none;
+    padding: 8px 0;
+    border: solid;
+    border-width: 1px;
+    border-radius: 5px; }
+    .buttons .btn-list > .btn img, .buttons .btn-list > .btn i {
+      width: 2em;
+      padding: 0 0.3em; }
+    .buttons .btn-list > .btn:hover {
+      background-color: #4ba94b; }
 
 .infra.hide {
   display: none; }
