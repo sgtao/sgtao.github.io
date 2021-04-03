@@ -421,7 +421,8 @@
   transition: all .5s; }
 
 #page_top.fadein:hover {
-  opacity: 0.9; }
+  opacity: 0.9;
+  cursor: pointer; }
 
 /******************************************************************
 
