@@ -440,13 +440,13 @@ img {
 .font-sm, .sub-title, .lessons__title {
   font-size: 14px; }
 
-.font-md {
+.font-md, .section-title::after {
   font-size: 17px; }
 
 .font-lr {
   font-size: 17px; }
 
-.font-lg, .main-title {
+.font-lg, .main-title, .section-title {
   font-size: 25px; }
 
 .mb-sm {
@@ -501,15 +501,13 @@ img {
   text-align: center;
   font-weight: bold;
   color: #008;
-  font-size: 24px;
   margin-bottom: 20px;
   margin-top: 0; }
 
 .section-title::after {
   content: attr(data-subtitle);
   display: block;
-  color: #888;
-  font-size: 16px; }
+  color: #888; }
 
 .header {
   position: relative;
@@ -580,22 +578,22 @@ footer {
   Stylesheet: 600px以上のタブレットやモニタで適用
   
   ******************************************************************/ }
-@media (min-width: 960px) {
+@media (min-width: 800px) {
   /******************************************************************
   
-  Stylesheet: 960px以上のモニタで適用
+  Stylesheet: 800px以上のモニタで適用
   
   ******************************************************************/
   .font-sm, .sub-title, .lessons__title {
     font-size: 16px; }
 
-  .font-md {
+  .font-md, .section-title::after {
     font-size: 19px; }
 
   .font-lr {
     font-size: 23px; }
 
-  .font-lg, .main-title {
+  .font-lg, .main-title, .section-title {
     font-size: 36px; }
 
   .mb-lg {
@@ -605,18 +603,24 @@ footer {
     padding-bottom: 150px !important; }
 
   .header__nav {
-    width: 400px; }
-
+    width: 400px; } }
+@media (min-width: 960px) {
+  /******************************************************************
+  
+  Stylesheet: 960px以上のモニタで適用
+  
+  ******************************************************************/
   .lessons__inner {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     max-width: 1070px;
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: space-between;
     flex-wrap: wrap; }
   .lessons__item {
-    margin: 10px 40px;
+    width: 40%;
+    margin: 10px 20px;
     background-color: white; } }
 @media (min-width: 1280px) {
   /******************************************************************

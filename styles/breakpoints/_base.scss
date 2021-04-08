@@ -75,18 +75,20 @@ img {
   background-size: cover;
 }
 .section-title {
+  @extend .font-lg;
   text-align: center;
   font-weight: bold;
   color: #008;
-  font-size: 24px;
+  // font-size: 24px;
   margin-bottom: 20px;
   margin-top: 0;
 }
 .section-title::after {
+  @extend .font-md;
   content: attr(data-subtitle);
   display: block;
   color: #888;
-  font-size: 16px;
+  // font-size: 16px;
 }
 // header
 .header {

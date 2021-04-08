@@ -3,46 +3,21 @@
 Stylesheet: 960px以上のモニタで適用
 
 ******************************************************************/
-.font-sm {
-  font-size: 16px;
-}
-.font-md {
-  font-size: 19px;
-}
-.font-lr {
-  font-size: 23px;
-}
-.font-lg {
-  font-size: 36px;
-}
-.mb-lg {
-  margin-bottom: 150px !important;
-}
-.pb-lg {
-  padding-bottom: 150px !important;
-}
-
-// modify style of header 
-.header {
-  &__nav {
-    width: 400px;
-  }
-}
 
 // modify to flexbox for lessons
 .lessons {
-  
   &__inner {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     max-width: $contentMaxWidth;
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: space-between;
     flex-wrap: wrap;
   }
   &__item {
-    margin: 10px 40px;
+    width: 40%;
+    margin: 10px 20px;
     background-color: $cWhite;
   }
 }
