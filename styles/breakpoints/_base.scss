@@ -35,7 +35,7 @@ img {
   padding-bottom: 80px !important;
 }
 .content-width {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   max-width: $contentMaxWidth;
 }
@@ -135,9 +135,6 @@ img {
   }
 }
 
-
-
-
 .infra.hide {
   display: none;
 }
@@ -171,7 +168,10 @@ img {
 
 /* footer */
 footer {
-  padding: 40px 0;
-  text-align: center;
+  .container {
+    margin: 0 auto;
+    padding: 40px 0;
+    text-align: center;
+  }
 }
 

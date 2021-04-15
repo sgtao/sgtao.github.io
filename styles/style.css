@@ -462,7 +462,7 @@ img {
   padding-bottom: 80px !important; }
 
 .content-width, .lessons {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   max-width: 1070px; }
 
@@ -562,7 +562,8 @@ img {
   width: 400px; }
 
 /* footer */
-footer {
+footer .container {
+  margin: 0 auto;
   padding: 40px 0;
   text-align: center; }
 
@@ -603,13 +604,8 @@ footer {
     padding-bottom: 150px !important; }
 
   .header__nav {
-    width: 400px; } }
-@media (min-width: 960px) {
-  /******************************************************************
-  
-  Stylesheet: 960px以上のモニタで適用
-  
-  ******************************************************************/
+    width: 400px; }
+
   .lessons__inner {
     width: 100%;
     margin: 0 auto;
@@ -620,8 +616,14 @@ footer {
     flex-wrap: wrap; }
   .lessons__item {
     width: 40%;
-    margin: 10px 20px;
+    margin: 10px 20px 60px 20px;
     background-color: white; } }
+@media (min-width: 960px) {
+  /******************************************************************
+  
+  Stylesheet: 960px以上のモニタで適用
+  
+  ******************************************************************/ }
 @media (min-width: 1280px) {
   /******************************************************************
   

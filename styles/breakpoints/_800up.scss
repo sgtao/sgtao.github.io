@@ -28,3 +28,21 @@ Stylesheet: 800px以上のモニタで適用
     width: 400px;
   }
 }
+
+// modify to flexbox for lessons
+.lessons {
+  &__inner {
+    width: 100%;
+    margin: 0 auto;
+    max-width: $contentMaxWidth;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__item {
+    width: 40%;
+    margin: 10px 20px 60px 20px;
+    background-color: $cWhite;
+  }
+}
