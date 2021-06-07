@@ -519,30 +519,34 @@ img {
     text-align: left; }
 
 /* Home/Cloud infrastructure */
+.buttons {
+  display: block;
+  position: relative;
+  margin: 0 auto; }
+
 .buttons .btn-list {
   position: relative;
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  margin: 0 30 0 30;
-  padding: 10px 20px;
+  margin: 0 auto;
+  padding: 5px 0;
   width: 80%; }
   .buttons .btn-list > .btn {
     display: inline-block;
-    background-color: rgba(75, 169, 75, 0.3);
+    background-color: rgba(169, 169, 169, 0.3);
     color: black;
     border-color: black;
     text-align: center;
     text-decoration: none;
     padding: 8px 0;
-    border: solid;
-    border-width: 1px;
-    border-radius: 5px; }
+    border: 1px solid gray;
+    border-width: 1px; }
     .buttons .btn-list > .btn img, .buttons .btn-list > .btn i {
       width: 2em;
       padding: 0 0.3em; }
     .buttons .btn-list > .btn:hover {
-      background-color: #4ba94b; }
+      border-bottom: 5px solid darkgoldenrod; }
 
 .infra.hide {
   display: none; }
