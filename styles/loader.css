@@ -1,5 +1,5 @@
 .pace-done #global-container {
-  transition: opacity 1s;
+  transition: opacity 3s;
   opacity: 1; }
 
 #global-container {
@@ -10,13 +10,14 @@
   user-select: none;
   z-index: 2000;
   position: fixed;
-  margin: auto; }
+  margin: auto;
+  background-color: black; }
 
 .pace-inactive {
   display: none; }
 
-.pace .pace-progress {
-  background-color: rgba(0, 0, 0, 0.2);
+.pace-progress {
+  background-color: rgba(122, 232, 95, 0.152);
   position: fixed;
   z-index: -1;
   top: 0;
@@ -31,6 +32,6 @@
   font-weight: 100;
   font-size: 2em;
   font-family: 'Helvetica Neue', 'Yu Gothic', 'Meiryo', sans-serif;
-  color: #535353; }
+  color: black; }
 
 /*# sourceMappingURL=loader.css.map */
