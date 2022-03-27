@@ -8,7 +8,7 @@ $cSubtitle: #535353;
     position: relative;
     background-color: $cWhite;
     z-index: 2;
-    transition: all 1s ease;
+    transition: all 0.2s ease;
 }
 
 
@@ -27,7 +27,7 @@ $cSubtitle: #535353;
         background-color: rgba(0, 0, 0, 0.3);
         opacity: 0;
         visibility: hidden;
-        transition: opacity 1s;
+        transition: opacity 0.2s;
         cursor: pointer;
     }
 
@@ -106,7 +106,7 @@ $cSubtitle: #535353;
 
             @for $i from 1 through 5 {
                 &:nth-child(#{$i}) {
-                    transition-delay: $i * 0.7s;
+                    transition-delay: $i * 0.4s;
                 }
             }
         }
